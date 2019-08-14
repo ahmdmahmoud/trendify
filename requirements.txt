@@ -1,0 +1,36 @@
+nose
+sphinx
+python3-tk
+tensorflow-gpu
+keras==2.0.8
+matplotlib== 1.5.3
+statsmodels== 0.6.1
+sklearn
+boto==2.45.0
+bz2file==0.98
+decorator==4.0.11
+gensim==0.13.4.1
+isodate==0.5.4
+joblib==0.10.3
+langdetect==1.0.7
+networkx==1.11
+nltk==3.2.1
+numpy==1.12.0
+pandas==0.19.2
+pkg-resources==0.0.0
+pyaml==16.12.2
+pyparsing==2.1.10
+python-dateutil==2.6.0
+pytz==2016.10
+PyYAML==3.12
+rdflib==4.2.1
+requests==2.12.4
+scipy==0.18.1
+six==1.10.0
+smart-open==1.3.5
+urllib3==1.21.1
+graphviz
+pydot
+pydot-ng
+pydotplus
+datetime_truncate

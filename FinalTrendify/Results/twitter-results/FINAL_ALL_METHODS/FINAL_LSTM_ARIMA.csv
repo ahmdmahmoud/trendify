@@ -1,0 +1,11 @@
+words,lstm_trend,arima_trend
+chinese,True,False
+though,False,True
+~,False,False
+sports,False,False
+pressure,False,False
+off,False,True
+children,False,False
+same,True,True
+baby,False,True
+caught,False,True

@@ -1,0 +1,11 @@
+words,ebay_trend,ma_trend,arima_trend,sarima_trend,tes_trend
+baby,False,False,True,True,True
+caught,False,True,True,False,True
+children,False,False,False,False,False
+same,False,True,True,True,True
+pressure,True,True,False,False,False
+off,False,True,True,True,True
+chinese,True,False,False,False,False
+though,False,True,True,True,True
+~,False,False,False,False,False
+sports,True,False,False,False,True

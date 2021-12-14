@@ -1,3 +1,6 @@
+WORK IN PROGRESS
+ 
+ 
 Introduction
 =============
 This reporitory includes the code for our trend detection and forecasting model, attend2trend. Furthermore, the repository provides a framework for running, and comparing, different statistical-based trend detection models.  

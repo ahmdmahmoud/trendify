@@ -75,32 +75,7 @@ Useful code comments:
 - **Default GPU usage:** In line 61, you find 'gpu_memory_fraction = 0.3' where you can set the fraction of gpu memory allocation. TensorBoard can also be used using the created logs directory.
 
 
-(Internal-KDSEV03) Comments and TODOs: 
-=====================================
 
-This section will describe how to train and evaluate our trend detection model.   
-
-Initially, we used Twitter dataset and a Wikipedia Dataset. Both datasets are placed in the following directory: 
-
- /data21/asaleh/share/trendify_data/training_data.
-
-**For wiki creation:**
-
-From the wiki_create_frequency_time_series.py script, you can setup the following parameters: 
-
--  hours_per_file    This parameter will split the data to a smaller chunks. Splitting the data will help us to avoid the lack of memory issues. With this parameter, you can define the sequence length of each splitted file.  
-
--  zero_tolerance    To define how many zeros you allow inside the sequences. You can set the train_split and whether to use sequences with trends inside or no trends inside to generate the train, test, valid from. 
-
-**For twitter creation:**
-
-First, you need to run the create_entity_timestamps_csv.py script to generate the entity_timestamps.csv file by using the pre trained NER to detect entities and then add the timestamp of the tweet. The data for the NER model is located at "/data21/asaleh/share/trendify_ner_data" and must be set accordingly in the parameters.
-
-Afterwards, you can use the "create_frequency_time_series.py" script with the previously created file as an input and then choose a timestep (hour, minute or day). For example, if you set it to "day", the sequences will have the length of 17 since this is the time period of our twitter dataset (17 days of twitter data). You can also specifiy an absolute maximum threshold of allowed 0 per sequence (i.e. for 17 days you might want to allow 4 entries with zeroes or maybe no restrictions, which will then have the problem of many many zeroes). 
-
-[] TODO: Change to a percentage-based variable. 
-
-You can set the train_split again in code. The full csv will be stored with the -o parameter. The train, test, valid files will be created in the same directory.
 
 
 
